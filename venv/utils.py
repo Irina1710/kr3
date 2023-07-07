@@ -1,3 +1,4 @@
+import json
 from datetime import datetime
 
 
@@ -68,7 +69,7 @@ def get_formatted_data(data):
         else:
             sender = ""
 
-        print(f"Получатель до : { row['to'] }"
+        print(f"Получатель до : { row['to'] }")
         to =encode_bill_info(row['to'])
         print(f"Получатель после: { to }")
 
